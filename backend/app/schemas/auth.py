@@ -1,0 +1,19 @@
+from pydantic import BaseModel, EmailStr, Field
+
+
+class SignupRequest(BaseModel):
+    email: EmailStr
+    full_name: str = Field(min_length=2, max_length=255)
+    password: str = Field(min_length=8, max_length=128)
+    selected_charity_id: int | None = None
+    charity_percent: int = Field(default=10, ge=10, le=100)
+
+
+class LoginRequest(BaseModel):
+    email: EmailStr
+    password: str
+
+
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"

@@ -13,6 +13,9 @@ export default function HomePage() {
           <Link className="rounded-lg bg-slate-900 px-4 py-2 text-white" href="/auth">
             Sign up / Login
           </Link>
+          <Link className="rounded-lg bg-slate-700 px-4 py-2 text-white" href="/about">
+            About Platform
+          </Link>
           <Link className="rounded-lg bg-emerald-600 px-4 py-2 text-white" href="/dashboard">
             User Dashboard
           </Link>

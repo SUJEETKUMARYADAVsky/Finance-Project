@@ -69,3 +69,4 @@ Frontend: `http://localhost:3000`
 - Add object storage integration (S3/Supabase Storage) for proof uploads.
 - Add Alembic migrations before production rollout.
 - Enforce HTTPS and secure CORS origins.
+ done 
